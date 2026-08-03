@@ -1,0 +1,35 @@
+# c:\dev workspace root -- only track documentation, not code repos or state.
+# Each subdirectory is its own git repo. This repo tracks ONLY workspace-level docs.
+
+# Ignore everything by default
+*
+
+# Allow workspace-level documentation
+!.gitignore
+!AGENTS.md
+!CLAUDE.md
+!CREDO.md
+!ECOSYSTEM.md
+!MISSION.md
+!README.md
+!SESSION-BOOTSTRAP.md
+!WORKSPACE-INDEX.md
+!WORKSPACE-ROADMAP.md
+!PRODUCT.md
+
+# Allow project-docs directory (workspace-level deliverables, not repo-specific)
+# NOTE: project-docs/ and docs/ are their own git repos. Do not embed them.
+# Reference them from the workspace docs instead.
+
+# Do NOT track:
+# public/         (each repo is its own git repo)
+# state/          (private, proprietary)
+# secrets/        (never)
+# protected/      (never)
+# _*/             (scratch, temp, cache)
+# *.json          (generated maps)
+# *.png *.jpg     (screenshots)
+# data/           (runtime data)
+# tests/          (workspace-level test scratch)
+# tools/          (workspace tools)
+# scratch/ tmp/   (ephemeral)
