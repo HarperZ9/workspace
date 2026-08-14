@@ -59,7 +59,10 @@ infrastructure controls, and the encryption-based receipt path). Read
 `ECOSYSTEM.md` provide navigation, treated as indexes that may lag the code.
 
 The former `local-model` and `flywheel-desktop` repos are consolidated into
-`public/flywheel` at v0.3.0. The old repos are archived with redirect notices.
+`public/flywheel` at v0.3.0; since v0.3.3 one `v*` tag ships both halves (the
+`flywheel-verify` wheel to PyPI and the Windows installer to the GitHub
+Release). The old repos are archived read-only; the local `local-model`
+checkout is the private research twin with a frozen origin.
 
 ## Design and voice
 One standard for every public surface:
@@ -81,6 +84,13 @@ paths; published surfaces may not.
 - No production deploy without an explicit "yes, deploy". Preserve dirty work
   before cleanup; prefer ledger snapshots over deletion.
 - Branch before committing to a default branch.
+- A cleanup pass never classifies by directory name alone. Before deleting or
+  relocating any file, check whether git tracks it (`git ls-files --error-unmatch`)
+  and leave tracked files alone. The 2026-07-19 curation sweep put the live repo
+  roots `elder-enb`, `truth-enb`, and `shader-handoff` in the same allow-list as
+  `scratch` and `tmp`, then moved 44 tracked docs out of them; the hash-verified
+  copies made it recoverable, the classifier is what failed. Repo roots are never
+  a disposable class.
 
 ## Launch order (headless)
 1. This canon. 2. The repo's own instructions. 3. `git status` before editing.
