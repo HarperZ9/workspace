@@ -20,7 +20,7 @@ layer between the global standards and a project. Last verified: 2026-07-26.
   operated on its own, so it cannot rely on inheriting this canon and does not
   point at it. Anything from here a project also needs is copied into that repo's
   own file, in that repo's own register (public repos stay public-clean; see
-  `local-model/scripts/check_public_instructions.py`).
+  `public/flywheel/scripts/check_public_instructions.py`).
 
 ## The workspace, honestly
 `c:\dev` is a local state-transform workspace: its job is vendor portability,
@@ -46,15 +46,20 @@ user chooses it. So:
   does-not-prove is instrument development, not a result. Honest nulls stay.
 - No-drift gates over hand-transcription. Numbers and public copy are
   hash-tracked or gated, not trusted (`findings.py`, `check_claim_language.py`,
-  `check_public_instructions.py` in `local-model`).
+  `check_public_instructions.py` in `public/flywheel`).
 - Fresh-research default. For external facts (prices, availability, posts,
   schedules) gather a current source or mark `unknown`; never fill from memory.
 
 ## The engine
-The epistemic verification engine and its lane layer live in `local-model`
+The epistemic verification engine and its lane layer live in `public/flywheel`
 (`harness/lanes.py`, the certificate families, the pool/arms measurement
-apparatus). Read `harness/lanes.py` for the live lane map; `WORKSPACE-INDEX.md`
-predates it and may lag.
+apparatus, the organizational learning loop, the TADR governance system, the
+infrastructure controls, and the encryption-based receipt path). Read
+`harness/lanes.py` for the live lane map; `WORKSPACE-INDEX.md` and
+`ECOSYSTEM.md` provide navigation, treated as indexes that may lag the code.
+
+The former `local-model` and `flywheel-desktop` repos are consolidated into
+`public/flywheel` at v0.3.0. The old repos are archived with redirect notices.
 
 ## Design and voice
 One standard for every public surface:
@@ -64,7 +69,7 @@ voice, no em-dashes, honest nulls. Internal docs (this register) may use local
 paths; published surfaces may not.
 
 - Writing register: the register-adaptive writing standard in ~/.claude/CLAUDE.md
-  governs prose. The linter is local-model/scripts/check_writing.py. My chat
+  governs prose. The linter is public/flywheel/scripts/check_writing.py. My chat
   prose to the operator uses the flavored `chat` profile: active voice, no
   em-dashes, no marketing words, calibrated uncertainty kept.
 
@@ -79,5 +84,5 @@ paths; published surfaces may not.
 
 ## Launch order (headless)
 1. This canon. 2. The repo's own instructions. 3. `git status` before editing.
-4. `WORKSPACE-INDEX.md` and `WORKSPACE-ROADMAP.md` for navigation, treated as
-indexes that may lag the code.
+4. `WORKSPACE-INDEX.md`, `ECOSYSTEM.md`, and `WORKSPACE-ROADMAP.md` for
+navigation, treated as indexes that may lag the code.
