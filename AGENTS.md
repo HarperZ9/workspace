@@ -98,3 +98,26 @@ meaning, prefer a pointer to a copied block. `P:` file or artifact, `O:` offset
 or span inside it, `R:` repo, `L:` lane, `G:` gate, `C:` claim state
 (`verified` / `inferred` / `unknown` / `blocked`). Expand a pointer only when the
 active task needs the content; treat summaries as indexes, not content dumps.
+
+**Blind-hand principles.** Orient from files and current command output, not from
+model memory.
+- File state beats model memory. Current command output beats assumptions.
+- Root docs orient; repo docs govern.
+- Private artifacts stay local. Generated artifacts are not source until
+  intentionally promoted.
+- Authority is not model-internal. It is local, task-scoped, and operator-directed.
+- Preserve uncommitted work before any cleanup, migration, or branch change.
+
+**Handoff note format.** When leaving work in progress, record:
+
+```text
+Repo:
+Branch:
+Head:
+Dirty files:
+Committed:
+Pushed:
+Verification:
+Private/local-only artifacts:
+Next action:
+```
