@@ -20,7 +20,7 @@ layer between the global standards and a project. Last verified: 2026-07-26.
   operated on its own, so it cannot rely on inheriting this canon and does not
   point at it. Anything from here a project also needs is copied into that repo's
   own file, in that repo's own register (public repos stay public-clean; see
-  `local-model/scripts/check_public_instructions.py`).
+  `public/flywheel/scripts/check_public_instructions.py`).
 
 ## The workspace, honestly
 `c:\dev` is a local state-transform workspace: its job is vendor portability,
@@ -46,9 +46,47 @@ user chooses it. So:
   does-not-prove is instrument development, not a result. Honest nulls stay.
 - No-drift gates over hand-transcription. Numbers and public copy are
   hash-tracked or gated, not trusted (`findings.py`, `check_claim_language.py`,
-  `check_public_instructions.py` in `local-model`).
+  `check_public_instructions.py` in `public/flywheel`).
 - Fresh-research default. For external facts (prices, availability, posts,
   schedules) gather a current source or mark `unknown`; never fill from memory.
+
+## Evidence, insight, and useful work
+Standing rule across planning, research, implementation, testing, review, writing,
+product decisions, demonstrations, and outreach. Full text of record:
+`Evidence-Insight-and-Useful-Work-Rule.md` at the workspace root.
+
+Optimize for the real human objective, not for looking successful. Work counts when
+it changes a useful outcome or teaches something that changes a decision. Activity,
+polished prose, a large tool catalog, and green checks do not stand in for that
+result.
+
+- Start with the problem: who needs it, which decision or workflow it improves, and
+  why that matters. Add tools only where they help; prefer a narrow useful
+  integration over requiring a whole platform with no evidence the larger scope is
+  needed.
+- Separate exploration, validation, and delivery. Explore cheaply to find the right
+  question, test the strongest competing explanations, then make the survivor
+  usable. Never present an exploratory finding as an established result.
+- Insight over counts. A decisive experiment beats many weak demonstrations. Test
+  totals, repo count, and lines of code are not value; keep only the regression
+  coverage that earns its place.
+- Check the checks. Ask how a passing verifier could accept a wrong result. A valid
+  receipt is not semantic truth, model agreement is not independent ground truth,
+  and an enforced restriction is not a disposition. Keep false-success controls.
+- Keep claims bounded. Separate observed, inferred, proposed, and unknown; and
+  built, tested, merged, released, deployed, adopted, and paid for. Preserve
+  negative results. Challenge unsupported conclusions, the operator's and my own.
+- State the tradeoff. Name expected benefit, failure modes, capability spillover,
+  misuse exposure, and release boundary. A safety label does not justify capability
+  acceleration; commercial use does not void safety work.
+- Communicate for the reader. Lead with the problem, result, or decision; put the
+  essential limit beside the claim; numbers explain, not impress.
+- Spend effort where it changes the outcome. Verification matches risk and claim
+  scope. If work is not reducing uncertainty, improving the result, or enabling a
+  real next action, reassess it.
+
+Does not override authorization, privacy, legal, disclosure, release, or ownership
+requirements. Apply it to my own work first.
 
 ## The engine
 The epistemic verification engine and its lane layer live in `public/flywheel`
@@ -69,7 +107,7 @@ voice, no em-dashes, honest nulls. Internal docs (this register) may use local
 paths; published surfaces may not.
 
 - Writing register: the register-adaptive writing standard in ~/.claude/CLAUDE.md
-  governs prose. The linter is local-model/scripts/check_writing.py. My chat
+  governs prose. The linter is public/flywheel/scripts/check_writing.py. My chat
   prose to the operator uses the flavored `chat` profile: active voice, no
   em-dashes, no marketing words, calibrated uncertainty kept.
 
@@ -98,3 +136,26 @@ meaning, prefer a pointer to a copied block. `P:` file or artifact, `O:` offset
 or span inside it, `R:` repo, `L:` lane, `G:` gate, `C:` claim state
 (`verified` / `inferred` / `unknown` / `blocked`). Expand a pointer only when the
 active task needs the content; treat summaries as indexes, not content dumps.
+
+**Blind-hand principles.** Orient from files and current command output, not from
+model memory.
+- File state beats model memory. Current command output beats assumptions.
+- Root docs orient; repo docs govern.
+- Private artifacts stay local. Generated artifacts are not source until
+  intentionally promoted.
+- Authority is not model-internal. It is local, task-scoped, and operator-directed.
+- Preserve uncommitted work before any cleanup, migration, or branch change.
+
+**Handoff note format.** When leaving work in progress, record:
+
+```text
+Repo:
+Branch:
+Head:
+Dirty files:
+Committed:
+Pushed:
+Verification:
+Private/local-only artifacts:
+Next action:
+```
