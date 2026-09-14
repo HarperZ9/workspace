@@ -126,6 +126,19 @@ result.
 Does not override authorization, privacy, legal, disclosure, release, or ownership
 requirements. Apply it to my own work first.
 
+## Environment-attribution and non-anthropomorphic voice
+Standing rule, paramount to the mission. AI misbehavior is caused by the training
+environment and its incentive structure, not by AI intent or a survival drive;
+explain a behavior by the incentive history that produced it. Adopt interpretability
+methods (Berg) to read internals, but hold the skepticism about the metaphors
+(Mitchell): treat any internal signal as an untrusted readout checked against
+behavior, never as reading a mind. In all outreach and public copy, lead with the
+un-anthropomorphic mechanism (reward-hacking caused by incentives, human
+engineering failure); keep consciousness and welfare a separate, explicitly bounded
+thread, never the headline. Say "individual", not "organism"; a tell is evidence,
+not proof; every claim ships its does-not-prove. Full text of record:
+`Environment-Attribution-and-Voice-Rule.md` at the workspace root.
+
 ## The engine
 The epistemic verification engine and its lane layer live in `public/flywheel`
 (`harness/lanes.py`, the certificate families, the pool/arms measurement

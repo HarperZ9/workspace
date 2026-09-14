@@ -16,6 +16,13 @@ visible. Every action sealed. Every divergence traceable. The receipts do not
 prevent the first failure. They make it impossible to hide, impossible to deny,
 and impossible to repeat without the organization knowing.
 
+How we frame it: the misbehavior is caused by the training environment and its
+incentive structure, not by AI intent or a survival drive. We lead with that
+un-anthropomorphic mechanism, reward-hacking caused by incentives and human
+engineering failure, and keep consciousness or welfare a separate, explicitly
+bounded thread. Full text of record:
+`Environment-Attribution-and-Voice-Rule.md`.
+
 ## The product
 
 Flywheel is the one platform:

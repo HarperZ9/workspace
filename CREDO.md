@@ -11,6 +11,8 @@ Honest nulls first-class.
 Ownership earned by comprehension.
 Learning woven into the work.
 A control is trusted after something tries to break it.
+Misbehavior explained by the environment that shaped it, never by imputed intent.
+Internals read as an untrusted readout, checked against behavior, never as a mind.
 
 ## The witnessing spine
 
