@@ -6,8 +6,9 @@ platform in `public/flywheel`; this file does not duplicate it.
 
 ## Current posture
 
-- `C:\dev` is the canonical local workspace. The engine and the six lanes live in
-  `public/flywheel`; Index (`public/index`) owns the repository inventory.
+- `C:\dev` is the canonical local workspace. The engine and its lane layer live in
+  `public/flywheel` (enumerated in `public/flywheel/harness/lanes.py`); Index
+  (`public/index`) owns the repository inventory.
 - Root docs are canon only while they match the code. When a change lands that a
   root doc describes, update the doc in the same pass. A doc that lags the code is
   a defect.

@@ -8,7 +8,8 @@ canon, then the map.
 ## Read in this order
 
 1. `AGENTS.md` (or `CLAUDE.md`): the workspace canon. What this is, the
-   verification discipline, the engine, safety and hygiene, launch order.
+   verification discipline, the adversarial mirror, the engine, safety and
+   hygiene, launch order.
 2. `ECOSYSTEM.md`: the public tools and how they compose. The platform is Flywheel.
 3. `MISSION.md`: what Zentropy Labs is building and why.
 4. `CREDO.md`: the belief the tools instantiate.

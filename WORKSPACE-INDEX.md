@@ -31,6 +31,8 @@ rewritten or dropped before promotion, not carried forward.
 |---|---|
 | `README.md` | Front door. Start here. |
 | `AGENTS.md` / `CLAUDE.md` | The workspace canon, kept in sync by hand. |
+| `Evidence-Insight-and-Useful-Work-Rule.md` | Standing rule: useful work, clear insight, honest evidence. |
+| `Adversarial-Mirror-Methodology.md` | Standing methodology: offense as an instrument for defense, and how to read security context. |
 | `ECOSYSTEM.md` | The public tools and how they compose. |
 | `MISSION.md` | What Zentropy Labs is building and why. |
 | `CREDO.md` | The belief the tools instantiate. |
@@ -67,7 +69,7 @@ truth for what is present and dirty.
 
 | Path | Use |
 |---|---|
-| `public/flywheel` | The flagship. The epistemic engine, the six lanes, the gateway, receipts, governance, the learning loop. |
+| `public/flywheel` | The flagship. The epistemic engine, the lane layer (enumerated in `public/flywheel/harness/lanes.py`), the gateway, receipts, governance, the learning loop. |
 | `public/index` | Index: the repository-inventory and code-intelligence tool. Owns the workspace repo map. |
 | `public/portfolio-site` | Live checkout of the `HarperZ9.github.io` site. Site edits are PR-based against that repo; verify `git status` before touching this tree. |
 | `public/telos-v2` | Source of the design and voice canon (`project-docs/DESIGN-VOICE-CANON.md`). Can lag the live site. |

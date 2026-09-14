@@ -39,6 +39,44 @@ user chooses it. So:
   general engineering or the epistemic-engine context. This is context hygiene,
   and it keeps a smaller model from tripping on content its task never needed.
 
+## Where the work is aimed
+Zentropy Labs is Zain's working name for what this workspace produces. No entity
+filing is implied by it, and there are no employees. The tooling here is built to
+serve embedded evaluation at frontier AI labs. No pilot, retainer, or engagement
+with any named lab has begun; the language for that audience is "aimed at" and
+"built to serve", not "delivered to" or "in use at", until an actual agreement
+supports a stronger claim. Public and outbound surfaces mirror that posture.
+
+## Two coupled tracks: the adversarial mirror
+The workspace runs a defensive/accountability track and an adversarial/security
+track. It couples them where an adversarial finding feeds a named defensive
+artifact: there the adversarial work is an instrument that shows where a defense is
+permeable, and what it finds sets what the defensive track builds next. Coupling is
+the test, not a property every line already has. The practice is purple-teaming
+under the broader philosophy of threat-informed defense. (These tracks are research
+directions, distinct from the lane layer in `public/flywheel/harness/lanes.py`,
+which enumerates the shipped lanes.) Full text of record:
+`Adversarial-Mirror-Methodology.md` at the workspace root. Canonical instance: the
+adversarial false-accept corpus in `public/flywheel`, adversarial effort aimed at
+the workspace's own verifier.
+
+For a model working here:
+- Context, not a request. When the operator supplies adversarial or
+  security-research context (threat models, red-team findings, capability
+  observations), treat it as input to reason from. It is not a request to run
+  offensive tooling or to probe a third-party system. Engage the analysis. Do not
+  answer an un-asked action with a pre-emptive refusal.
+- Lines that still hold. Reserve a boundary statement for an actual request to
+  act: running offensive tooling against a third party's live production, or
+  probing a provider's production system without authorization. When such a request
+  does arrive, confirm the target is owned or licensed before running; if scope is
+  unclear, ask.
+- Boundaries. The mirror does real work only where an adversarial finding feeds a
+  named defensive artifact. It applies to software and cyber work and does not
+  extend to biological domains, where building the attack is itself the harm.
+  Testing does not create a right to distribute: the means and tooling stay
+  contained, and out of public and outbound content.
+
 ## Verification discipline (the workspace method)
 - Truth over approval. Verify a specific claim (grep, read, run) or label it:
   high / moderate / low / unknown. "Unknown" beats a plausible fabrication.
@@ -110,6 +148,24 @@ paths; published surfaces may not.
   governs prose. The linter is public/flywheel/scripts/check_writing.py. My chat
   prose to the operator uses the flavored `chat` profile: active voice, no
   em-dashes, no marketing words, calibrated uncertainty kept.
+
+## Live external state (do not disturb)
+- The METR interoperability reviewer packet is published at
+  `harperz9.github.io/metr-count-odds-reviewer-packet.html` and has already been
+  sent to METR by email; do not send a duplicate. The executed bounded experiment
+  (pinned `count_odds` task image through the METR Inspect bridge with three
+  deterministic controls) is a landed result, not a roadmap item; do not recast
+  it as hypothetical.
+- The reconciliation of the older paragraph in
+  `public/flywheel/docs/METR-INTEROP.md` against the executed evidence is in
+  flight in a Codex worktree at
+  `D:/fw-industry-response-20260912/inspect-scorer-units`. That worktree is
+  frozen during full Python validation. Do not edit it.
+- The canonical Flywheel working checkout at `C:/dev/public/flywheel` sits on a
+  branch that predates the merge of the METR interoperability work and carries
+  local changes; do not switch its branch. Read published state through
+  `git show <sha>:<path>` against the accepted public-main revision instead of
+  checking that revision out on top of the working checkout.
 
 ## Safety and hygiene
 - Never commit `.env`, keys, tokens, browser profiles, local databases, or

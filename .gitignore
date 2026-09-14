@@ -7,6 +7,7 @@
 # Allow workspace-level documentation
 !.gitignore
 !AGENTS.md
+!Adversarial-Mirror-Methodology.md
 !CLAUDE.md
 !CREDO.md
 !ECOSYSTEM.md

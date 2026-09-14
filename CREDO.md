@@ -10,6 +10,7 @@ Every result re-runnable.
 Honest nulls first-class.
 Ownership earned by comprehension.
 Learning woven into the work.
+A control is trusted after something tries to break it.
 
 ## The witnessing spine
 
@@ -33,6 +34,14 @@ T1 requires disciplined baseline practice.
 T2 requires enhanced assurance, independent challenge, and rehearsed response.
 T3 requires a strong argument for safety, restricted authority, external
 scrutiny, continuous evidence, and the ability to stop.
+
+## The mirror
+
+Trust in a control comes after something tries to break it. The work builds the
+attack against its own defenses, and what the attack gets through sets what gets
+hardened next. The adversarial effort is an instrument for the defensive one. It
+runs against owned or licensed systems and stays contained. Full method:
+`Adversarial-Mirror-Methodology.md`.
 
 ## The long form
 
