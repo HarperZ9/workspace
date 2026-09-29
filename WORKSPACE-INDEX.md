@@ -105,7 +105,8 @@ truth for what is present and dirty.
 
 `WORKSPACE-REPO-MAP.json` is a generated snapshot and goes stale. The generator
 is now part of Index (`public/index`), which retired the standalone
-`workspace-repo-map` tool into itself. Regenerate the inventory with Index:
+`workspace-repo-map` tool into itself. With Index installed in the selected Python
+environment, run this command from the workspace root:
 
 ```powershell
 python -m index_graph map --root . --output WORKSPACE-REPO-MAP.json
