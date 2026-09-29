@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The curated navigation layer for `C:\dev`. It tells a session where to start,
+The curated navigation layer for `<workspace>`. It tells a session where to start,
 how to classify the top-level directories, and which areas are canonical,
 private, generated, or historical. Use `WORKSPACE-REPO-MAP.json` for
 machine-readable repository metadata, and repo-local instructions once inside a
@@ -14,13 +14,14 @@ read this one for where things live on disk.
 
 ## What this is
 
-`C:\dev` is a local workspace for vendor portability, schema stability, and
+`<workspace>` is a local workspace for vendor portability, schema stability, and
 operator-owned provenance across nested repos, CLIs, model routes, and research
 lanes. Tools and models are replaceable materials, and external provider behavior
 is a boundary fact carried by an adapter or a probe, never the design target. The
 epistemic verification engine lives in `public/flywheel`.
 
-Legacy trees under `state/` and `protected/` are capability sources. Useful code,
+Legacy trees are capability sources; active runtime state also lives under
+`state/`. Verify the owner and status of the specific tree. Useful code,
 algorithms, tests, and parsers can be promoted into the current architecture over
 time. Old headers, authority assertions, and provider-coupled prompts are
 rewritten or dropped before promotion, not carried forward.
@@ -31,6 +32,8 @@ rewritten or dropped before promotion, not carried forward.
 |---|---|
 | `README.md` | Front door. Start here. |
 | `AGENTS.md` / `CLAUDE.md` | The workspace canon, kept in sync by hand. |
+| `Evidence-Insight-and-Useful-Work-Rule.md` | Standing rule: useful work, clear insight, honest evidence. |
+| `Adversarial-Mirror-Methodology.md` | Standing methodology: offense as an instrument for defense, and how to read security context. |
 | `ECOSYSTEM.md` | The public tools and how they compose. |
 | `MISSION.md` | What Zentropy Labs is building and why. |
 | `CREDO.md` | The belief the tools instantiate. |
@@ -48,7 +51,7 @@ lineage, not as current architecture.
 | Path | Class | Use |
 |---|---|---|
 | `public/` | public-surface | Public repos: the Flywheel engine, Index, the live site source, and the individual tool repos mapped in `ECOSYSTEM.md`. |
-| `state/` | legacy-runtime | Archived state-runtime and engine material predating the Flywheel consolidation. A capability source, not the current architecture. |
+| `state/` | runtime and archive | Active local runtimes and preserved earlier material. Verify each subdirectory's owner and status before using it. |
 | `protected/` | local-only | Do-not-redistribute mirrors, proprietary references, private corpus, warden-ops state, migration artifacts, session recovery. |
 | `project-docs/` | root docs | Root specs, records, schemas, inventories, and local tools. May lag the code. |
 | `frontier-models-research/` | research capture | Local research runs and source captures. |
@@ -67,7 +70,7 @@ truth for what is present and dirty.
 
 | Path | Use |
 |---|---|
-| `public/flywheel` | The flagship. The epistemic engine, the six lanes, the gateway, receipts, governance, the learning loop. |
+| `public/flywheel` | The flagship. The epistemic engine, the lane layer (enumerated in `public/flywheel/harness/lanes.py`), the gateway, receipts, governance, the learning loop. |
 | `public/index` | Index: the repository-inventory and code-intelligence tool. Owns the workspace repo map. |
 | `public/portfolio-site` | Live checkout of the `HarperZ9.github.io` site. Site edits are PR-based against that repo; verify `git status` before touching this tree. |
 | `public/telos-v2` | Source of the design and voice canon (`project-docs/DESIGN-VOICE-CANON.md`). Can lag the live site. |
@@ -105,7 +108,7 @@ is now part of Index (`public/index`), which retired the standalone
 `workspace-repo-map` tool into itself. Regenerate the inventory with Index:
 
 ```powershell
-python -m index_graph map --root C:\dev
+python -m index_graph map --root . --output WORKSPACE-REPO-MAP.json
 ```
 
 The count in any committed snapshot is not authoritative. Run `git status` in a
