@@ -35,7 +35,7 @@ rewritten or dropped before promotion, not carried forward.
 | `Evidence-Insight-and-Useful-Work-Rule.md` | Standing rule: useful work, clear insight, honest evidence. |
 | `Adversarial-Mirror-Methodology.md` | Standing methodology: offense as an instrument for defense, and how to read security context. |
 | `ECOSYSTEM.md` | The public tools and how they compose. |
-| `MISSION.md` | What Zentropy Labs is building and why. |
+| `MISSION.md` | What Zain Dana Harper is building and why. |
 | `CREDO.md` | The belief the tools instantiate. |
 | `WORKSPACE-ROADMAP.md` | Current workspace posture and near-term housekeeping. |
 | `WORKSPACE-REPO-MAP.json` | Generated repo inventory. Regenerate before trusting it. |

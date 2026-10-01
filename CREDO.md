@@ -1,6 +1,6 @@
 # CREDO
 
-> The belief held steady across every surface of the Zentropy Labs ecosystem.
+> The belief held steady across every surface of the ecosystem.
 
 ## What this believes
 
@@ -40,4 +40,4 @@ scrutiny, continuous evidence, and the ability to stop.
 
 ---
 
-**Zentropy Labs** - order out of entropy. Built by Zain Dana Harper in Seattle.
+Built by **[Zain Dana Harper](https://harperz9.github.io)** in Seattle.

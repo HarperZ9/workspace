@@ -1,6 +1,6 @@
 # MISSION
 
-> What Zentropy Labs is building and why.
+> What Zain Dana Harper is building and why.
 
 ## The problem
 
@@ -50,4 +50,4 @@ the remembering.
 
 ---
 
-**Zentropy Labs** - order out of entropy.
+Built by **[Zain Dana Harper](https://harperz9.github.io)** in Seattle.
