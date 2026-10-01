@@ -1,4 +1,4 @@
-# The Zentropy Labs Ecosystem
+# The Ecosystem
 ## Why Each Tool Exists and How They Compose
 
 > One belief held steady across every surface: knowledge open to anyone who can
@@ -324,5 +324,5 @@ the content-addressed seal of the receipt it represents.
 
 ---
 
-**Zentropy Labs** - order out of entropy.
+Built by **[Zain Dana Harper](https://harperz9.github.io)** in Seattle.
 [harperz9.github.io](https://harperz9.github.io) | [github.com/HarperZ9](https://github.com/HarperZ9)

@@ -14,7 +14,7 @@ canon, then the map.
    verification discipline, the adversarial mirror, the engine, safety and
    hygiene, launch order.
 2. `ECOSYSTEM.md`: the public tools and how they compose. The platform is Flywheel.
-3. `MISSION.md`: what Zentropy Labs is building and why.
+3. `MISSION.md`: what Zain Dana Harper is building and why.
 4. `CREDO.md`: the belief the tools instantiate.
 5. `WORKSPACE-INDEX.md`: the local map. Directory classes, what is private or
    generated, repo-selection rules, and how to regenerate the repo inventory.

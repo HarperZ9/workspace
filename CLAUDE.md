@@ -40,8 +40,8 @@ user chooses it. So:
   and it keeps a smaller model from tripping on content its task never needed.
 
 ## Where the work is aimed
-Zentropy Labs is the operator's working name for what this workspace produces. No entity
-filing is implied by it, and there are no employees. The tooling here is built to
+The work is published under the operator's name, Zain Dana Harper, as a sole
+proprietorship with no employees. The tooling here is built to
 serve embedded evaluation at frontier AI labs. Use "aimed at" and "built to serve" unless current evidence supports a
 stronger statement about an engagement or deployment. Public and outbound
 surfaces must distinguish intended use from observed adoption.
