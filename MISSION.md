@@ -44,7 +44,7 @@ authoritative enumeration of shipped lanes is `public/flywheel/harness/lanes.py`
 
 ## Where it deploys
 
-Zentropy Labs builds this platform to serve embedded evaluation at frontier AI
+Zain Dana Harper builds this platform to serve embedded evaluation at frontier AI
 labs. No pilot, retainer, or engagement with any named lab has begun. The
 language stays "aimed at" and "built to serve" until an actual agreement
 supports a stronger claim. The workflow the platform makes useful, and the
