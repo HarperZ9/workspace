@@ -1,4 +1,4 @@
-# c:\dev workspace root -- only track documentation, not code repos or state.
+# Workspace root: track documentation only, not code repos or runtime state.
 # Each subdirectory is its own git repo. This repo tracks ONLY workspace-level docs.
 
 # Ignore everything by default
@@ -9,6 +9,8 @@
 !AGENTS.md
 !Adversarial-Mirror-Methodology.md
 !CLAUDE.md
+!Adversarial-Mirror-Methodology.md
+!Environment-Attribution-and-Voice-Rule.md
 !CREDO.md
 !Delayed-Disclosure-and-Protected-Interests.md
 !ECOSYSTEM.md
@@ -16,10 +18,8 @@
 !Evidence-Insight-and-Useful-Work-Rule.md
 !MISSION.md
 !README.md
-!SESSION-BOOTSTRAP.md
 !WORKSPACE-INDEX.md
 !WORKSPACE-ROADMAP.md
-!PRODUCT.md
 
 # Allow project-docs directory (workspace-level deliverables, not repo-specific)
 # NOTE: project-docs/ and docs/ are their own git repos. Do not embed them.

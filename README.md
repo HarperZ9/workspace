@@ -1,6 +1,9 @@
-# C:\dev Workspace
+# Workspace guidance
 
-The canonical local workspace. A session rooted here inherits this layer. Global
+This repository publishes reusable workspace guidance. An operator may keep
+additional private instructions and ownership records locally; this public copy
+does not replace them or authorize an action. A session rooted here inherits
+this layer subject to its actual instruction hierarchy. Global
 engineering standards sit above it in `~/.claude/CLAUDE.md`, and each project
 under here is its own standalone repo with its own instructions. Start with the
 canon, then the map.
@@ -19,7 +22,7 @@ canon, then the map.
 
 ## What this is
 
-`C:\dev` is a local workspace for vendor portability, schema stability, and
+`<workspace>` is a local workspace for vendor portability, schema stability, and
 operator-owned provenance across nested repos, CLIs, model routes, and research
 lanes. Tools and models are replaceable materials, and the user chooses them. The
 epistemic verification engine and its lane layer live in `public/flywheel`.
