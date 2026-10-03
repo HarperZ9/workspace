@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The curated navigation layer for `<workspace>`. It tells a session where to start,
+The curated navigation layer for `C:\dev`. It tells a session where to start,
 how to classify the top-level directories, and which areas are canonical,
 private, generated, or historical. Use `WORKSPACE-REPO-MAP.json` for
 machine-readable repository metadata, and repo-local instructions once inside a
@@ -14,14 +14,13 @@ read this one for where things live on disk.
 
 ## What this is
 
-`<workspace>` is a local workspace for vendor portability, schema stability, and
+`C:\dev` is a local workspace for vendor portability, schema stability, and
 operator-owned provenance across nested repos, CLIs, model routes, and research
 lanes. Tools and models are replaceable materials, and external provider behavior
 is a boundary fact carried by an adapter or a probe, never the design target. The
 epistemic verification engine lives in `public/flywheel`.
 
-Legacy trees are capability sources; active runtime state also lives under
-`state/`. Verify the owner and status of the specific tree. Useful code,
+Legacy trees under `state/` and `protected/` are capability sources. Useful code,
 algorithms, tests, and parsers can be promoted into the current architecture over
 time. Old headers, authority assertions, and provider-coupled prompts are
 rewritten or dropped before promotion, not carried forward.
@@ -31,11 +30,10 @@ rewritten or dropped before promotion, not carried forward.
 | File | Role |
 |---|---|
 | `README.md` | Front door. Start here. |
-| `AGENTS.md` / `CLAUDE.md` | The workspace canon, kept in sync by hand. |
-| `Evidence-Insight-and-Useful-Work-Rule.md` | Standing rule: useful work, clear insight, honest evidence. |
-| `Adversarial-Mirror-Methodology.md` | Standing methodology: offense as an instrument for defense, and how to read security context. |
+| `AGENTS.md` / `CLAUDE.md` | The workspace canon, kept in sync by hand. Its "Rules of record" section is the annotated index of the standing rules. |
+| Rules of record | Listed with exact paths in "Rules of record" below. |
 | `ECOSYSTEM.md` | The public tools and how they compose. |
-| `MISSION.md` | What Zain Dana Harper is building and why. |
+| `MISSION.md` | What the workspace is building and why. |
 | `CREDO.md` | The belief the tools instantiate. |
 | `WORKSPACE-ROADMAP.md` | Current workspace posture and near-term housekeeping. |
 | `WORKSPACE-REPO-MAP.json` | Generated repo inventory. Regenerate before trusting it. |
@@ -46,12 +44,28 @@ rewritten or dropped before promotion, not carried forward.
 the Flywheel consolidation and organize around a superseded model. Treat them as
 lineage, not as current architecture.
 
+## Rules of record
+
+Each rule has one full text (the file) and one short form (the "Rules of record"
+section of `C:/dev/CLAUDE.md`, identical in `C:/dev/AGENTS.md`).
+
+| Path | Rule |
+|---|---|
+| `C:/dev/Evidence-Insight-and-Useful-Work-Rule.md` | Useful work, clear insight, honest evidence; evaluation-to-decision; compete to win every relevant feature. |
+| `C:/dev/Environment-Attribution-and-Voice-Rule.md` | Misbehavior explained by incentives, never intent; non-anthropomorphic voice. |
+| `C:/dev/Adversarial-Mirror-Methodology.md` | Offense as an instrument for defense, and how to read security context. |
+| `C:/dev/Delayed-Disclosure-and-Protected-Interests.md` | Coordinated disclosure, the protected interests, conflict transparency. |
+| `C:/dev/Just-Culture-and-Commons-Rule.md` | Just culture (honest error meets learning, concealment sanctioned) and the commons thesis. |
+| `C:/dev/Research-Synthesis-Method.md` | Weng's seven-step synthesis method for all research and the agent's own work; gap-fills labeled inferred. |
+| `C:/dev/CREDO.md` | The belief held across every surface. |
+| `C:/dev/MISSION.md` | What the workspace is building and why. |
+
 ## Top-level areas
 
 | Path | Class | Use |
 |---|---|---|
 | `public/` | public-surface | Public repos: the Flywheel engine, Index, the live site source, and the individual tool repos mapped in `ECOSYSTEM.md`. |
-| `state/` | runtime and archive | Active local runtimes and preserved earlier material. Verify each subdirectory's owner and status before using it. |
+| `state/` | legacy-runtime | Archived state-runtime and engine material predating the Flywheel consolidation. A capability source, not the current architecture. |
 | `protected/` | local-only | Do-not-redistribute mirrors, proprietary references, private corpus, warden-ops state, migration artifacts, session recovery. |
 | `project-docs/` | root docs | Root specs, records, schemas, inventories, and local tools. May lag the code. |
 | `frontier-models-research/` | research capture | Local research runs and source captures. |
@@ -105,11 +119,10 @@ truth for what is present and dirty.
 
 `WORKSPACE-REPO-MAP.json` is a generated snapshot and goes stale. The generator
 is now part of Index (`public/index`), which retired the standalone
-`workspace-repo-map` tool into itself. With Index installed in the selected Python
-environment, run this command from the workspace root:
+`workspace-repo-map` tool into itself. Regenerate the inventory with Index:
 
 ```powershell
-python -m index_graph map --root . --output WORKSPACE-REPO-MAP.json
+python -m index_graph map --root C:\dev
 ```
 
 The count in any committed snapshot is not authoritative. Run `git status` in a

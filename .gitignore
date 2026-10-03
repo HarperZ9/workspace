@@ -7,11 +7,14 @@
 # Allow workspace-level documentation
 !.gitignore
 !AGENTS.md
+!Adversarial-Mirror-Methodology.md
 !CLAUDE.md
 !Adversarial-Mirror-Methodology.md
 !Environment-Attribution-and-Voice-Rule.md
 !CREDO.md
+!Delayed-Disclosure-and-Protected-Interests.md
 !ECOSYSTEM.md
+!Environment-Attribution-and-Voice-Rule.md
 !Evidence-Insight-and-Useful-Work-Rule.md
 !MISSION.md
 !README.md

@@ -85,10 +85,13 @@ usability, integration, portability, privacy, security, evaluation and operation
   Feature count, promotional claims and favorable narrow benchmarks do not
   replace a better product or independently checked outcomes.
 
-This direction originally placed the Flywheel 1.0.0 release gates first.
-For current work, verify the release state and applicable gates before choosing
-the next improvement. Competitive leadership remains the next phase, supported
-by a feature comparison, a prioritized gap backlog and checked releases.
+For Flywheel, complete the existing 1.0.0 release gates first. The next phase
+explicitly pursues competitive leadership across the product, supported by a
+feature comparison, a prioritized gap backlog and successive checked releases.
+This sequencing does not delay applying the rule to current development.
+
+Status, 2026-10-03: the v1.0.0 tag landed 2026-09-18 and v1.2.1 on 2026-10-01, so
+the 1.0.0 gate above is met and the competitive-leadership phase is current work.
 
 ## Evaluation must inform decisions
 

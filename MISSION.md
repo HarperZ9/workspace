@@ -16,6 +16,13 @@ visible. Every action sealed. Every divergence traceable. The receipts do not
 prevent the first failure. They make it impossible to hide, impossible to deny,
 and impossible to repeat without the organization knowing.
 
+How we frame it: the misbehavior is caused by the training environment and its
+incentive structure, not by AI intent or a survival drive. We lead with that
+un-anthropomorphic mechanism, reward-hacking caused by incentives and human
+engineering failure, and keep consciousness or welfare a separate, explicitly
+bounded thread. Full text of record:
+`Environment-Attribution-and-Voice-Rule.md`.
+
 ## The product
 
 Flywheel is the one platform:
@@ -28,9 +35,29 @@ Flywheel is the one platform:
    compound.
 5. Encryption-based receipts: ed25519 signatures for non-repudiation.
 
-Six flagship lanes compose through the gateway, auto-wired by plexus, verified
-by crucible, remembered by mneme, orchestrated by forum, learned by learn,
-reconciled by telos.
+Six flagship lanes carry the receipt loop end to end in mission-arc form:
+composed through the gateway, auto-wired by plexus, verified by crucible,
+remembered by mneme, orchestrated by forum, learned by learn, reconciled by
+telos. That subset is a narrative view of the mission arc, not the full public
+tool roster; the roster is broader and lives in `ECOSYSTEM.md`, and the
+authoritative enumeration of shipped lanes is `public/flywheel/harness/lanes.py`.
+
+## Where it deploys
+
+Zain Dana Harper builds this platform to serve embedded evaluation at frontier AI
+labs. No pilot, retainer, or engagement with any named lab has begun. The
+language stays "aimed at" and "built to serve" until an actual agreement
+supports a stronger claim. The workflow the platform makes useful, and the
+limits of what any given result establishes, come first on every public and
+outbound surface.
+
+## Tested against itself
+
+Flywheel's guarantees are checked by attacking them. An adversarial corpus feeds
+inputs built to make the verifier accept a wrong result, and the verifier earns
+its place by refusing them. What gets through sets what gets hardened next. This
+adversarial work is the instrument that keeps the accountability claims honest. It
+runs against owned or licensed systems and stays contained.
 
 ## The north star
 
