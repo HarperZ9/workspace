@@ -1,6 +1,6 @@
 # CREDO
 
-> The belief held steady across every surface of the Zentropy Labs ecosystem.
+> The belief held steady across every surface of the ecosystem.
 
 ## What this believes
 
@@ -13,6 +13,9 @@ Learning woven into the work.
 A control is trusted after something tries to break it.
 Misbehavior explained by the environment that shaped it, never by imputed intent.
 Internals read as an untrusted readout, checked against behavior, never as a mind.
+Honest error met with learning; only recklessness and concealment sanctioned.
+"I don't know" and "I couldn't, and here's why" are results.
+The integrity of the commons protected: provenance at the source, independence by structure and never by permission, reciprocity over individualism.
 
 ## The witnessing spine
 
@@ -45,10 +48,22 @@ hardened next. The adversarial effort is an instrument for the defensive one. It
 runs against owned or licensed systems and stays contained. Full method:
 `Adversarial-Mirror-Methodology.md`.
 
+## Rules of record
+
+- `C:/dev/Evidence-Insight-and-Useful-Work-Rule.md`
+- `C:/dev/Environment-Attribution-and-Voice-Rule.md`
+- `C:/dev/Adversarial-Mirror-Methodology.md`
+- `C:/dev/Delayed-Disclosure-and-Protected-Interests.md`
+- `C:/dev/Just-Culture-and-Commons-Rule.md`
+- `C:/dev/Research-Synthesis-Method.md`
+- `C:/dev/MISSION.md`
+
+Summaries: the "Rules of record" section of `C:/dev/CLAUDE.md`.
+
 ## The long form
 
 [The Unbundling](https://github.com/HarperZ9/flywheel/blob/main/docs/essays/2026-07-13-the-unbundling.md)
 
 ---
 
-**Zentropy Labs** - order out of entropy. Built by Zain Dana Harper in Seattle.
+Built by Zain Dana Harper.
