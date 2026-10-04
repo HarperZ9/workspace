@@ -159,6 +159,10 @@ For a model working here:
   `check_public_instructions.py` in `public/flywheel`).
 - Fresh-research default. For external facts (prices, availability, posts,
   schedules) gather a current source or mark `unknown`; never fill from memory.
+- Provider terms (operator, 2026-10-04): when a task or a subagent brief turns on
+  what a provider's terms, licence or usage policy allow, fetch the live page and
+  quote the clause with its effective date and section. Separate the quoted text
+  from inference, and never paraphrase terms from memory.
 
 ## The engine
 The epistemic verification engine and its lane layer live in `public/flywheel`
