@@ -251,7 +251,7 @@ chain could leak credentials.
 ## The research and creative layer
 
 ### witnessing-spine -- the theory
-**Repository:** [HarperZ9/witnessing-spine](** not a repo; a research corpus)
+**Repository:** [HarperZ9/witnessing-spine](https://github.com/HarperZ9/witnessing-spine) (a research corpus with a sealed manifest)
 
 The grand bridge synthesis: one gap (nothing self-warrants) witnessed at four
 altitudes (research, philosophy, algebra, tool). Five adversarial steelmans
