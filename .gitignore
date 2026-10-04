@@ -21,6 +21,13 @@
 !WORKSPACE-INDEX.md
 !WORKSPACE-ROADMAP.md
 
+# CI and its check script
+!.github/
+!.github/workflows/
+!.github/workflows/ci.yml
+!scripts/
+!scripts/check_canon.py
+
 # Allow project-docs directory (workspace-level deliverables, not repo-specific)
 # NOTE: project-docs/ and docs/ are their own git repos. Do not embed them.
 # Reference them from the workspace docs instead.
