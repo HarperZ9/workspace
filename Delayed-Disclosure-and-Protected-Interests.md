@@ -155,7 +155,7 @@ future work can compose against a stated standard rather than reinvent it.
   claims and synthesis kept distinct; no announced control treated as
   independently verified; a `does_not_prove` boundary on every record; a
   correction log; a machine-readable JSON edition per publication. Operations
-  doc: `public/portfolio-site/docs/frontier-safety-operations.md` — guarded
+  doc: `public/portfolio-site/docs/frontier-safety-operations.md`, a guarded
   reviewed publication with idempotence, reproducibility, source-check,
   fetch-error, unbaselined and review-required gates. The X and LinkedIn
   editions in `public/portfolio-site/frontier-safety/social/YYYY-MM-DD-*.txt`
