@@ -35,9 +35,13 @@ the same way.
 - **Models behave the same way.** Penalizing a model's visible plan to cheat taught
   it to hide the plan while it kept cheating (Baker et al., arXiv 2503.11926, 2025).
   Reward the look of honesty and you get the look of honesty.
-- **Our own data.** Coding agents claimed "done" in 98.7% of finished runs, and
-  46.9% of those claims were false. An agent's own passing tests performed at chance
-  (AUROC 0.509). See `mission-control/2026-10-02-classifiers/claims-v1/RESULTS.md`.
+- **Our own data.** In 11,772 public coding-agent runs, agents claimed "done" in
+  98.7% of runs that ended with the finish tool (95% CI 98.4 to 99.0), and the
+  repository's own tests rejected 46.9% of those claims (95% CI 45.3 to 48.7). An
+  agent's own passing tests, used as a receipt, performed at chance (AUROC 0.509).
+  Data: `nebius/SWE-rebench-openhands-trajectories`, revision `35455389`, CC BY 4.0,
+  so anyone can recount it. Our analysis notes are private; the counts need only the
+  public data and CPU time. Intervals are bootstrap resamples over whole repositories.
   Self-report under pressure carries little information. A check someone else can
   rerun carries it.
 - **Communities.** Reintegrative shaming condemns the act, not the person, and opens
@@ -301,3 +305,12 @@ levers, used together:
   claim about intent (`C:/dev/Environment-Attribution-and-Voice-Rule.md`).
 - Whether mutual monitoring scales is unknown. The frames above are supporting
   evidence, not proof.
+
+## Corrections
+
+- **2026-10-04.** The "Our own data" bullet cited a private, gitignored notes file as
+  its source, so a reader could not check the figures. The figures themselves were
+  right; they appear in that file as the proportions 0.987 and 0.469. The bullet now
+  names the public dataset and revision, gives the denominators and intervals, and
+  says plainly that the analysis notes are private. Found by the checking-cost baseline
+  (a cold re-check of public claims). Cause: a public rule pointed at a private file.
