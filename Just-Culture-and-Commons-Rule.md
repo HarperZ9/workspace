@@ -58,11 +58,23 @@ out. This follows Marx and Reason.
 |---|---|
 | Honest error (a slip, a lapse, a wrong call made in good faith) | Learn, fix the system that allowed it, no penalty |
 | At-risk choice (a shortcut taken without seeing the risk) | Coach, and remove the incentive that rewarded the shortcut |
-| Reckless choice (the risk was known and disregarded) | Sanction, proportionately |
+| Reckless choice (the risk was known and disregarded) | Sanction, sized by its measured effect on future conduct rather than by moral gravity |
 | Concealment (hiding, falsifying or gaming the record) | Sanction, as the most serious category, because it destroys the information everyone depends on |
 
 Concealment ranks above the original error. Getting something wrong breaks one
 result. Hiding it breaks trust in every result after it.
+
+Sanctions are forward-looking levers, not retribution (author, 2026-11-06, adopting
+two changes proposed by the Sapolsky study, `mission-control/2026-11-04-sapolsky/SYNTHESIS.md`;
+author's words, verbatim: "yes, to the wording changes"). Two requirements follow:
+- **Size by measured effect.** A sanction is sized by the evidence of what it changes
+  in future conduct, the way the society lane measured fines against planned acts
+  and honest errors, not by how grave the act feels.
+- **Record the reason and the path back.** Every sanction is recorded with its
+  forward-looking reason (what it is meant to change) and the concrete path back
+  to trust. A sanction without both reads as punishment and is a defect.
+The person applying a sanction audits their own pull toward retribution as part of
+the record.
 
 ## Obligations this rule places on any system we build
 
@@ -253,6 +265,15 @@ still be possible. This section makes no claim that it scales.
 Evidence frame: Elinor Ostrom, *Governing the Commons* (1990). Commons that last let
 the people affected make the rules, use monitors accountable to the members, apply
 graduated sanctions, and have cheap ways to resolve conflict. High confidence.
+
+Bounded note (2026-10-30, approved by the author): in our own toy institution,
+graduated sanctions entrenched DARVO among fear-driven agents once offenders
+responded to expected cost (DARVO rose from 0.70 to 0.96), and a path back without
+graduation brought it to 0.03; adding the path back to graduation left it at 0.68
+(F95 MT4, a toy with a partly closed-form fear rule). Read Ostrom's principle with
+that boundary: where fear drives the conduct, the path back carries the work and
+graduation can work against it. This does not contradict the field evidence, which
+concerns real commons.
 
 ### 6. Reintegration and redemption
 

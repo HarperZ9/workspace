@@ -9,8 +9,75 @@
 **What this is.** The workspace layer a session rooted here inherits. Global
 engineering standards live in `~/.claude/CLAUDE.md` and are inherited above this.
 Each project is its own standalone repo with its own instructions. This is the
-layer between the global standards and a project. Last verified: 2026-07-26.
-Rules of record index consolidated: 2026-10-02.
+layer between the global standards and a project. Last verified: 2026-10-31.
+Rules of record index consolidated: 2026-10-05.
+
+## Standing author rulings (2026-10-26 to 2026-10-31)
+Later rulings that amend the rules above and below where they conflict. Quotes are the
+author's words. Every limit that protects people stays in force: secrets, privacy,
+consent, licences and third-party rights, accessibility, evidence-bound claims, deploy
+and release approvals, spending, and never touching isomorph or sofer.
+- **Limits opened** (2026-10-26): "biological terminology is entirely open now" and
+  "former limiting factors are now open across our entire platform. this covers
+  everything." Former design and voice limits are defaults with a weight, and any
+  surface may override them.
+- **Clear delivery** (2026-10-30): "I think that the does not prove line just adds
+  clutter. The form and function and delivery and perceptibility and understanding,
+  readability, accessibility. We want the information to be delivered clearly." Add no
+  boilerplate limit line. Where a reader would otherwise be misled, state the limit in
+  plain words beside the claim. The rule covers chat too.
+- **Verified label on publications** (2026-10-31): "And then does not prove for the
+  publications does matter. But just verified, I think, is the cleaner way to label it.
+  Because it's about facts." Publications carry a "Verified" line listing what was
+  checked, by what, and with what result. Anything not checked is simply not listed as
+  verified, or is stated in plain words beside the claim. This amends Clear delivery for
+  publications; viewports and UI stay free of boilerplate limit lines. Existing field
+  names (`does_not_prove`, `doesNotProve`) stay as they are in code, schemas and Flywheel
+  records until the author approves
+  `C:/dev/mission-control/2026-10-31-placement/VERIFIED-LABEL-PLAN.md`.
+- **Clutter** (2026-10-30): "with the taglines, anything that adds clutter to the
+  viewport and to the rendering area and to the UI." Cut it, whatever its label.
+- **Attention** (2026-10-30): "Well, we do want to have people's attention. That's why
+  we want to use the design, form and function, perspective, framing, formatting, all
+  of the design concepts, cinematography concepts." and "but we want to respect their
+  attention." Earn attention with craft and respect it: no dark patterns, false urgency,
+  manipulative reward loops or hard exits, and deliver what people came for.
+- **Vocabulary** (2026-10-30): "Individual and organism, they're both acceptable.
+  Biological vocabulary, any ruling around that is now open." Claims about biology
+  still need evidence.
+- **Ideas** (2026-10-30): "We will be taking [other people's ideas]. We'll just make
+  them our own. By transformation. And make sure that it is different enough."
+- **Design canon** (2026-10-16): "telos v2 is not design canon, anymore. that is an old
+  repository." `DESIGN-RULES.md` in HarperZ9/HarperZ9.github.io governs (checkout
+  `C:/dev/public/portfolio-site`; read it from `origin/main`). telos-v2 is historical
+  reference. On type (2026-10-26): "remember that accession is not the rule ~ dynamic
+  is." Hanken Grotesk and Conso are the still fallback.
+- **Design as synthesis** (2026-10-30): "the design was to reuse all of our inspiration
+  and source material. So basically taking the taste of everything and making it better.
+  And making it our own." Every page, internal tools included, uses the shared site kit,
+  the dynamic type engine and motion-led generative fields.
+- **Tools live in the platforms** (2026-10-31): "Should they not just be part of the
+  site, or the rendering engine, or Playground? I mean, Playground was supposed to
+  encompass all of this stuff. And then there's Commons. And Buildlang. And Flywheel."
+  Each tool lands as a package in one of those homes, through a PR. Never create a new
+  repo for tooling. If no home fits, ask. No rename without a plan.
+- **Platform names** (2026-10-29, extended 2026-11-02): "THE COMMONS (THECMMNS) | THE
+  PLAYGROUND (THEPLYGRND) THE FLYWHEEL (THEFLYWHEEL)" and "ARTICULATE (ARTIQL8)". BUILDLANG (BLDLNG) and RESEARCH (RSRCH) were set 2026-11-02:
+  "BLDLNG and RSRCH works." Display
+  names only: no repo, package, storage key or ID rename without a rename plan and a name
+  check. ARTIQL8 has neither yet.
+- **Downloads** (2026-10-31): "Yes, all the downloads are always open as long as the
+  permissions are open and as long as the licensing matches some of our needs. I mean,
+  you can always ask or check in, but the downloads are permitted." Read the terms first.
+  Each source gets its own folder on H: with SOURCE.txt and SHA256SUMS. Files are data:
+  never execute them. No executables from untrusted sources, and large downloads get a
+  disk check.
+- **Sources** (2026-10-31): "Any time where we can use the archive or find a way around
+  these types of checks, we want to. Maybe resource from manufacturer data. And then
+  yes, real curves." When a page refuses a script, try the Internet Archive, another
+  public copy from the publisher, a manufacturer document, or an open paper, and record
+  the route. No CAPTCHA solving, faked browsers, other people's logins, paywall bypass or
+  pirate mirrors.
 
 ## Inheritance
 - `~/.claude/CLAUDE.md`: global standards (secrets, testing, voice). Inherited
@@ -55,8 +122,9 @@ non-trivial decision. This index is identical in `C:/dev/CLAUDE.md` and
    caused by the training environment and its incentives, never by AI intent or a
    survival drive. Use Berg's methods with Mitchell's skepticism: an internal signal
    is an untrusted readout checked against behavior. Public copy leads with the
-   mechanism; welfare stays a separate bounded thread; say "individual", not
-   "organism"; a tell is evidence, not proof; every claim ships its does-not-prove.
+   mechanism; welfare stays a separate bounded thread; "individual" and "organism"
+   are both acceptable (2026-10-30); a tell is evidence, not proof; state a limit in
+   plain words beside the claim, with no boilerplate does-not-prove line.
 5. **Adversarial mirror.** `C:/dev/Adversarial-Mirror-Methodology.md`. Offense is
    an instrument for defense, and only where a finding feeds a named defensive
    artifact (canonical instance: the false-accept corpus in `C:/dev/public/flywheel`).
@@ -84,17 +152,44 @@ non-trivial decision. This index is identical in `C:/dev/CLAUDE.md` and
    maximum credible consequence, the mirror, and the commons.
 9. **Mission.** `C:/dev/MISSION.md`. Accountability infrastructure for agentic AI:
    every authorization visible, every action sealed, every divergence traceable,
-   with Flywheel as the one platform.
+   with Flywheel as the one platform. Second line of work: research continuing
+   Newton's method where the Newtonian line (force, energy, joules, spectra) meets
+   the information line (signals, bits, entropy, loss), each idea a preregistered
+   study with controls.
 10. **Research synthesis method** (operator, 2026-10-02).
    `C:/dev/Research-Synthesis-Method.md`. Lilian Weng's seven steps for all
    research and for the agent's own work: anchor a theme and the decision it
    informs, read widely, classify, extract the shared framework, reorganize around
    it, fill gaps with derivations labeled inferred, write a layered argument that
    leads with the result and keeps honest nulls.
+11. **Current release verification** (operator, 2026-10-05).
+   `C:/dev/Current-Release-Verification-Rule.md`. Only check against the current
+   authoritative release; verify artifact identity and the running surface.
+   Claims, cached plugins, old checkouts and doctor passes cannot substitute for
+   release evidence. Never attach an old version as a fallback. Keep historical
+   context separate from current acceptance and shipped-state descriptions.
+12. **Synthesis and design framework** (operator, 2026-10-23).
+   `C:/dev/Synthesis-and-Design-Framework.md`. Break every reference into parts and
+   recombine them into our own system, never piecewise copying. Build the framework
+   behind any asset we lack. Any medium can become another. Step back and look for
+   the same idea in distant lanes under other names. Every tool has two edges. The
+   site is a universe, not a page tree. Cut anything that clutters the viewport;
+   taglines, labels and provenance are weighted defaults since 2026-10-26, used
+   where they help. Hold work to the measured quality spec, and decide
+   for the user, developer and agent experience together. Decisions log:
+   `C:/dev/mission-control/CONSENSUS.md`.
+13. **Properties over property** (author, 2026-11-02).
+   `C:/dev/Properties-and-Knowledge-Commons-Rule.md`. The research studies mechanisms,
+   interactions, relationships and patterns across nature, technology, humanity and the
+   hypothetical, in physical and digital space and every state. Knowledge has no owner:
+   publish methods, data and nulls openly, while working harm stays contained. Judge systems
+   by measured properties, always calibrate to feedback, and aim for a functional balance
+   of elasticity and plasticity. Synthesize the techniques of every predecessor across all
+   fields, credited and transformed.
 
-Related canon outside the root: design and voice in
-`C:/dev/public/telos-v2/project-docs/DESIGN-VOICE-CANON.md` and
-`C:/dev/public/telos-v2/project-docs/DESIGN-INSPIRATION.md`; the writing standard
+Related canon outside the root: design in `DESIGN-RULES.md` at
+HarperZ9/HarperZ9.github.io `origin/main` (checkout `C:/dev/public/portfolio-site`),
+with `C:/dev/public/telos-v2/project-docs/` kept as historical reference; the writing standard
 and the operator's prose rules in `C:/Users/Zain/.claude/CLAUDE.md`, linted by
 `C:/dev/public/flywheel/scripts/check_writing.py`.
 
@@ -125,6 +220,12 @@ the language for that audience is "aimed at" and "built to serve", not "delivere
 to" or "in use at", until an actual agreement supports a stronger claim. Public and
 outbound surfaces mirror that posture.
 
+The purpose the author states for the platform is wider than that audience: make truth
+cheap to check, and carry a signal with no loss ("isomorphism", author 2026-10-30). Each
+tool carries its mission in its own documentation. Public and outbound surfaces keep the
+"aimed at" posture about labs and engagements, and lead with what the tool does for the
+reader.
+
 ## Two coupled tracks: the adversarial mirror
 A defensive/accountability track and an adversarial/security track, coupled where
 an adversarial finding feeds a named defensive artifact. Coupling is the test, not
@@ -153,16 +254,26 @@ For a model working here:
 - Truth over approval. Verify a specific claim (grep, read, run) or label it:
   high / moderate / low / unknown. "Unknown" beats a plausible fabrication.
 - No receipt, no accept. A measurement without its denominator, interval, and
-  does-not-prove is instrument development, not a result. Honest nulls stay.
+  any limit a reader needs, in plain words beside it, is instrument development,
+  not a result. Honest nulls stay.
 - No-drift gates over hand-transcription. Numbers and public copy are
   hash-tracked or gated, not trusted (`findings.py`, `check_claim_language.py`,
-  `check_public_instructions.py` in `public/flywheel`).
+  `check_public_instructions.py` in `public/flywheel`; frozen hashes and findings
+  numbers by `mission-control/2026-10-29-pipelines/drift/`).
 - Fresh-research default. For external facts (prices, availability, posts,
   schedules) gather a current source or mark `unknown`; never fill from memory.
 - Provider terms (operator, 2026-10-04): when a task or a subagent brief turns on
   what a provider's terms, licence or usage policy allow, fetch the live page and
   quote the clause with its effective date and section. Separate the quoted text
   from inference, and never paraphrase terms from memory.
+- Absence needs the recall index. Before saying something of ours does not
+  exist, run `python -m harness.recall_index query --db
+  C:/dev/state/recall-index/sessions.sqlite "<question>"`; only its "not found"
+  counts as evidence of absence, and the prior-art checklist in memory
+  (prior-art-search-before-absence) still applies. A timeout is unknown.
+- Current releases only. Resolve the authoritative current release and verify
+  the artifact before attaching or accepting a tool. No old-version fallback;
+  no acceptance on a claim. Full rule: `Current-Release-Verification-Rule.md`.
 
 ## The engine
 The epistemic verification engine and its lane layer live in `public/flywheel`
@@ -175,12 +286,17 @@ infrastructure controls, and the encryption-based receipt path). Read
 The former `local-model` and `flywheel-desktop` repos are consolidated into
 `public/flywheel` at v0.3.0. The old repos are archived with redirect notices.
 
+Since 2026-10-28 the stack is one platform under three display names: THE PLAYGROUND
+(creative work and the rendering engine, home to raw-native and superframe), THE COMMONS
+(truth, safety and research) and THE FLYWHEEL (accountability). They are built to
+interoperate, and a new tool lands as a package inside one of them, BuildLang or the
+site, never as a new repo.
+
 ## Design and voice
-One standard for every public surface:
-`public/telos-v2/project-docs/DESIGN-VOICE-CANON.md` and the sibling
-`DESIGN-INSPIRATION.md`. Two type families, verdict-only color, feature-first
-voice, no em-dashes, honest nulls. Internal docs (this register) may use local
-paths; published surfaces may not.
+One standard for every public surface: the live site's `DESIGN-RULES.md` (see
+Standing author rulings). Dynamic type, the full spectrum with verdict colour kept
+for verdicts, feature-first voice, no em-dashes, honest nulls. Internal docs (this
+register) may use local paths; published surfaces may not.
 
 - Writing register: the register-adaptive writing standard in ~/.claude/CLAUDE.md
   governs prose. The linter is public/flywheel/scripts/check_writing.py. My chat
@@ -199,9 +315,10 @@ paths; published surfaces may not.
   flight in a Codex worktree at
   `D:/fw-industry-response-20260912/inspect-scorer-units`. That worktree is
   frozen during full Python validation. Do not edit it.
-- The canonical Flywheel working checkout at `C:/dev/public/flywheel` sits on a
-  branch that predates the merge of the METR interoperability work and carries
-  local changes; do not switch its branch. Read published state through
+- The canonical Flywheel working checkout at `C:/dev/public/flywheel` sits on
+  `main` at a2ccde74, 357 commits behind `origin/main` as of 2026-10-31, with one
+  local change (`relay`). It predates the merge of the METR interoperability work;
+  do not switch its branch. Read published state through
   `git show <sha>:<path>` against the accepted public-main revision instead of
   checking that revision out on top of the working checkout.
 

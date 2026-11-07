@@ -44,3 +44,8 @@
 # tests/          (workspace-level test scratch)
 # tools/          (workspace tools)
 # scratch/ tmp/   (ephemeral)
+!Current-Release-Verification-Rule.md
+!Synthesis-and-Design-Framework.md
+!Properties-and-Knowledge-Commons-Rule.md
+!Just-Culture-and-Commons-Rule.md
+!Research-Synthesis-Method.md
