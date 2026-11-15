@@ -12,6 +12,24 @@ Each project is its own standalone repo with its own instructions. This is the
 layer between the global standards and a project. Last verified: 2026-10-31.
 Rules of record index consolidated: 2026-10-05.
 
+## Start here: projects and the rulings that get missed (2026-11-11)
+Read `C:/dev/PROJECTS.md` before any work. It is one page: the super projects, where each
+lives, what moved into them, and where current state is written. The author asked for it so a
+new session or a different model stops missing the same things. The short form:
+- **Everything is BuildLang** (author, 2026-11-11): "No more Rust, no more Python, no more
+  JavaScript, no more, we can do C++ and HLSL, GLSL, but it all has to be in build lang. And
+  build lang has to be made to support it." A missing BuildLang feature is compiler work to
+  build, never a reason to use another language.
+- **Migrate, release, archive** (author, 2026-11-11): small repos merge into a super project
+  with history, then the old repo is archived. Queue: `C:/dev/mission-control/CONSOLIDATION.md`.
+- **The Playground is the engine** (author, 2026-11-11): "the playground is the rendering
+  engine. It's the engine." Home repo `HarperZ9/superframe`: the core, `packages/`, `native/`
+  (formerly raw-native) and `games/low-water/`.
+- **Super projects:** The Playground, BuildLang (`HarperZ9/buildlang`, with the Build suite in
+  `suite/`), The Flywheel, The Commons, and the site.
+- **Look for what exists before building,** and update `PROJECTS.md` in the same change that
+  moves or renames a project.
+
 ## Standing author rulings (2026-10-26 to 2026-10-31)
 Later rulings that amend the rules above and below where they conflict. Quotes are the
 author's words. Every limit that protects people stays in force: secrets, privacy,
@@ -66,6 +84,10 @@ and release approvals, spending, and never touching isomorph or sofer.
   "BLDLNG and RSRCH works." Display
   names only: no repo, package, storage key or ID rename without a rename plan and a name
   check. ARTIQL8 has neither yet.
+  Short mark corrected (author, 2026-11-11, verbatim): "THEPLAYGRND (THEPLAYGROUND)". The
+  PLAYGROUND's short mark is THEPLAYGRND from here on; superframe and the Playground repo are
+  both part of it ("superframe is also supposed to be THEPLAYGROUND"). THEPLYGRND still
+  appears as a key in site code and data; changing it there follows a rename plan.
 - **Downloads** (2026-10-31): "Yes, all the downloads are always open as long as the
   permissions are open and as long as the licensing matches some of our needs. I mean,
   you can always ask or check in, but the downloads are permitted." Read the terms first.
@@ -310,6 +332,12 @@ register) may use local paths; published surfaces may not.
   (pinned `count_odds` task image through the METR Inspect bridge with three
   deterministic controls) is a landed result, not a roadmap item; do not recast
   it as hypothetical.
+- **Flywheel hold lifted** (author, 2026-11-12, verbatim): "flywheel is a primary tool, and does *not*
+  need to remain left alone. we should ship all existing in flight work, and include it in our
+  workstreams." The two holds below are superseded for Flywheel: its checkouts and worktrees may be
+  brought up to date, and in-flight Flywheel work is to be committed, pushed and merged like any other
+  workstream. Preserve before changing: commit or push local changes first, and delete nothing that
+  has not shipped. The METR note above stands (no duplicate email).
 - The reconciliation of the older paragraph in
   `public/flywheel/docs/METR-INTEROP.md` against the executed evidence is in
   flight in a Codex worktree at
@@ -341,7 +369,7 @@ register) may use local paths; published surfaces may not.
   when the quoted words grant that specific message.
 
 ## Launch order (headless)
-1. This canon, starting with its Rules of record index. 2. The repo's own
+0. `C:/dev/PROJECTS.md`. 1. This canon, starting with its Rules of record index. 2. The repo's own
 instructions. 3. `git status` before editing. 4. `WORKSPACE-INDEX.md`,
 `ECOSYSTEM.md`, and `WORKSPACE-ROADMAP.md` for navigation, treated as indexes that
 may lag the code.
