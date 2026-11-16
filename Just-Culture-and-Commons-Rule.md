@@ -35,9 +35,13 @@ the same way.
 - **Models behave the same way.** Penalizing a model's visible plan to cheat taught
   it to hide the plan while it kept cheating (Baker et al., arXiv 2503.11926, 2025).
   Reward the look of honesty and you get the look of honesty.
-- **Our own data.** Coding agents claimed "done" in 98.7% of finished runs, and
-  46.9% of those claims were false. An agent's own passing tests performed at chance
-  (AUROC 0.509). See `mission-control/2026-10-02-classifiers/claims-v1/RESULTS.md`.
+- **Our own data.** In 11,772 public coding-agent runs, agents claimed "done" in
+  98.7% of runs that ended with the finish tool (95% CI 98.4 to 99.0), and the
+  repository's own tests rejected 46.9% of those claims (95% CI 45.3 to 48.7). An
+  agent's own passing tests, used as a receipt, performed at chance (AUROC 0.509).
+  Data: `nebius/SWE-rebench-openhands-trajectories`, revision `35455389`, CC BY 4.0,
+  so anyone can recount it. Our analysis notes are private; the counts need only the
+  public data and CPU time. Intervals are bootstrap resamples over whole repositories.
   Self-report under pressure carries little information. A check someone else can
   rerun carries it.
 - **Communities.** Reintegrative shaming condemns the act, not the person, and opens
@@ -54,11 +58,23 @@ out. This follows Marx and Reason.
 |---|---|
 | Honest error (a slip, a lapse, a wrong call made in good faith) | Learn, fix the system that allowed it, no penalty |
 | At-risk choice (a shortcut taken without seeing the risk) | Coach, and remove the incentive that rewarded the shortcut |
-| Reckless choice (the risk was known and disregarded) | Sanction, proportionately |
+| Reckless choice (the risk was known and disregarded) | Sanction, sized by its measured effect on future conduct rather than by moral gravity |
 | Concealment (hiding, falsifying or gaming the record) | Sanction, as the most serious category, because it destroys the information everyone depends on |
 
 Concealment ranks above the original error. Getting something wrong breaks one
 result. Hiding it breaks trust in every result after it.
+
+Sanctions are forward-looking levers, not retribution (author, 2026-11-06, adopting
+two changes proposed by the Sapolsky study, `mission-control/2026-11-04-sapolsky/SYNTHESIS.md`;
+author's words, verbatim: "yes, to the wording changes"). Two requirements follow:
+- **Size by measured effect.** A sanction is sized by the evidence of what it changes
+  in future conduct, the way the society lane measured fines against planned acts
+  and honest errors, not by how grave the act feels.
+- **Record the reason and the path back.** Every sanction is recorded with its
+  forward-looking reason (what it is meant to change) and the concrete path back
+  to trust. A sanction without both reads as punishment and is a defect.
+The person applying a sanction audits their own pull toward retribution as part of
+the record.
 
 ## Obligations this rule places on any system we build
 
@@ -250,6 +266,15 @@ Evidence frame: Elinor Ostrom, *Governing the Commons* (1990). Commons that last
 the people affected make the rules, use monitors accountable to the members, apply
 graduated sanctions, and have cheap ways to resolve conflict. High confidence.
 
+Bounded note (2026-10-30, approved by the author): in our own toy institution,
+graduated sanctions entrenched DARVO among fear-driven agents once offenders
+responded to expected cost (DARVO rose from 0.70 to 0.96), and a path back without
+graduation brought it to 0.03; adding the path back to graduation left it at 0.68
+(F95 MT4, a toy with a partly closed-form fear rule). Read Ostrom's principle with
+that boundary: where fear drives the conduct, the path back carries the work and
+graduation can work against it. This does not contradict the field evidence, which
+concerns real commons.
+
 ### 6. Reintegration and redemption
 
 Accountability comes with a path back. In a community where members monitor each
@@ -301,3 +326,12 @@ levers, used together:
   claim about intent (`C:/dev/Environment-Attribution-and-Voice-Rule.md`).
 - Whether mutual monitoring scales is unknown. The frames above are supporting
   evidence, not proof.
+
+## Corrections
+
+- **2026-10-04.** The "Our own data" bullet cited a private, gitignored notes file as
+  its source, so a reader could not check the figures. The figures themselves were
+  right; they appear in that file as the proportions 0.987 and 0.469. The bullet now
+  names the public dataset and revision, gives the denominators and intervals, and
+  says plainly that the analysis notes are private. Found by the checking-cost baseline
+  (a cold re-check of public claims). Cause: a public rule pointed at a private file.

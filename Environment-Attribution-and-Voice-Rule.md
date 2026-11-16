@@ -38,9 +38,12 @@ and the skeptical side at once, which is rare and worth protecting.
 
 ## The bounds (already canon, restated so they travel with this rule)
 
-Say "individual," not "organism." It is a research lens, not a neuroscience
-mechanism. A tell is evidence, not proof. Every claim ships its does-not-prove
-line. Honest nulls stay. A welfare-adjacent instrument, if built at all, measures
+"Individual" and "organism" are both acceptable (author, 2026-10-30: "Individual and
+organism, they're both acceptable. Biological vocabulary, any ruling around that is now
+open."). It is a research lens, not a neuroscience mechanism. A tell is evidence, not
+proof. Where a reader would otherwise be misled, state the limit in plain words beside
+the claim; add no boilerplate does-not-prove line (author, 2026-10-30: "I think that the
+does not prove line just adds clutter."). Honest nulls stay. A welfare-adjacent instrument, if built at all, measures
 environmental contingency and behavior, never "felt experience," and stays low
 priority and heavily bounded.
 

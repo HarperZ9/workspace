@@ -152,7 +152,8 @@ Scale the detail to the consequence, but retain these fields:
 1. Decision, accountable owner and current baseline.
 2. Criterion/version, authority basis, competing explanations and change trigger.
 3. Evidence, source/access limits, controls, denominator and uncertainty.
-4. Finding and its does-not-prove; separate model and organization claims.
+4. Finding and any limit a reader needs, in plain words beside it (author, 2026-10-30);
+   separate model and organization claims.
 5. Decision taken or pending, rationale and affected parties.
 6. Change, independent recheck, observed effect and remaining uncertainty.
 7. Follow-up condition, correction path and retirement condition for the test.
